@@ -14,4 +14,5 @@ class Chatapp extends StatelessWidget {
       home: LoginView(),
     );
   }
+  
 }
