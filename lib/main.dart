@@ -1,4 +1,4 @@
-import 'package:chatapp/features/auth/presentation/views/login_view.dart';
+import 'package:chatapp/features/splash/presentation/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class Chatapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: LoginView(),
+      home: SplashScreen(),
     );
   }
   
