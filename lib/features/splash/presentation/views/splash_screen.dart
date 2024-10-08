@@ -1,5 +1,6 @@
 import 'dart:async';
-import 'package:chatapp/core/thems/colop_app.dart';
+import 'package:chatapp/core/constans/asset_images.dart';
+import 'package:chatapp/core/themes/styles.dart';
 import 'package:chatapp/features/auth/presentation/views/login_view.dart';
 import 'package:flutter/material.dart';
 
@@ -14,8 +15,6 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    
-    // Navigate to the next screen after 3 seconds
     Timer(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
@@ -30,15 +29,15 @@ class _SplashScreenState extends State<SplashScreen> {
         child: Column(
           children: [
             const SizedBox(
-              height: 50,
+              height: 100,
             ),
-            Image.asset("assets/images/logo 1.png"),
-            // SvgPicture.asset(AssetImages.logo),
-            const Text('whatsapp', style: TextStyle(color: ColorApp.primarycolor,)),
+            Image.asset(AssetImages.logopng,width: 180,height: 180,),
+            // SvgPicture.asset(AssetIcons.logo),
+             Text('WhatsUp', style: Styles.textStyle10),
             const SizedBox(
-              height: 200,
+              height: 160,
             ),
-            const Text('the best chat app in the centurt'),
+             Text('the best chat app in this century',style: Styles.textStyle24,),
           ],
         ),
       ),
