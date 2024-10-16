@@ -1,3 +1,4 @@
+import 'package:chatapp/features/auth/presentation/views/login_view.dart';
 import 'package:chatapp/features/splash/presentation/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -16,7 +17,7 @@ class Chatapp extends StatelessWidget {
       theme: ThemeData(
         textTheme: GoogleFonts.interTextTheme(),
       ),
-      home: const SplashScreen(),
+      home: const LoginView(),
     );
   }
   
